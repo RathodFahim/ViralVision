@@ -190,7 +190,7 @@ export default function InstagramAnalyzer() {
   // Settings State
   const [showSettings, setShowSettings] = useState(false);
   const [useRealData, setUseRealData] = useState(false);
-  const [apiKey, setApiKey] = useState('');
+  const [apiKey, setApiKey] = useState(import.meta.env.VITE_APIFY_API_TOKEN || '');
 
   const handleAnalyze = async (e) => {
     e.preventDefault();
