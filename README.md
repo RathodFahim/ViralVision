@@ -15,6 +15,18 @@ A React application that analyzes Instagram Reels and provides detailed insights
 - Node.js (version 16 or higher)
 - npm or yarn package manager
 
+## Environment Variables
+
+To run this project, you will need to add the following environment variable to your .env file or GitHub Secrets:
+
+`VITE_APIFY_API_TOKEN`
+
+This token is used to authenticate with the Apify API for real data fetching.
+
+## Security Note
+
+Since this is a client-side application deployed to GitHub Pages, the API token will be exposed in the client-side code. If you need strict security, consider using a backend proxy.
+
 ## Installation & Setup
 
 1. **Install dependencies:**
